@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+
+
+ @font-face {
+    font-family: 'Degular';
+    src: url('./assets/Degular_fonts/DegularDemo-Regular.otf');
+  
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+  @font-face {
+  font-family: 'Degular';
+  src: url('./assets/Degular_fonts/DegularDemo-Medium.otf');
+
+  font-weight: 500;
+    font-style: normal;
+  }
+
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/Degular_fonts/DegularDemo-Semibold.otf');
+
+  font-weight: 600;
+    font-style: normal;
+  }
+
+  
+
+  @font-face {
+    font-family: 'Degular';
+    src: url('./assets/Degular_fonts/DegularDemo-Bold.otf');
+  
+    font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl lg:text-3xl tracking-tighter font-bold text-primary m-0;
+  }
+
+   h2 {
+    @apply text-xl lg:text-2xl tracking-tight font-bold text-primary m-0;
+  }
+
+  p {
+    @apply tracking-sub-tight leading-4 text-secondary;
+  }
+
+  a > p{
+    @apply text-inherit;
+  }
+
+  div {
+    @apply w-fit;
+  }
+  button{
+    @apply bg-black rounded-app-primary text-white leading-6 tracking-md-tight font-semibold h-fit;
+  }
+}
+
+
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: 'Degular', 'Roboto',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
